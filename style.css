@@ -215,14 +215,14 @@ a{
     flex-wrap: wrap;
     padding-top: 24px;
 }
-.exhibit-info{
+.fisma{
     display: flex;
     text-align: left;
     height: auto;
     border: 1px solid lightgrey;
     margin-bottom: 1px;
 }
-.exhibit-info img{
+.fisma img{
     width: auto;
     height: 35%;
     padding: 16px;
