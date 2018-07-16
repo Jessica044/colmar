@@ -1,21 +1,19 @@
-body{
-    font-size:18px;
+body {
+    font-size: 18px;
     font-family: helvetica;
     margin: 0.5em;
     text-align: center;
 }
-
-.container{
-    width:auto;
-    margin:0;
-    display:flex;
-    justify-content:space-between;
+.container {
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
 }
-header{
-    height:64px;
-    width:100%;
-    border:2px solid black;
+header {
+    height: 64px;
+    width: 100%;
+    border: 2px solid black;
 }
 .logo img {
     height: 32px;
@@ -23,57 +21,183 @@ header{
     padding-top: 8px;
     margin-right: 16px;
     align-items: center;
- 
 }
-.name{
-    display:inline-flex;
-   text-align: center;
-    border:2px solid red;
-    
-           
-}
-.name1{
-    font-size:32px;
-    text-emphasis: bold;
-}
-.name2{
-    font-size:32px;
-    color:dimgray
-}
-
-nav{
-    display: flex;
-    
-}
-nav span{
-    text-align: right;
-    padding: 0 8px;
-    font-size: 18px
-   
-}
-.nav{
-    text-align: right;
-    padding-right: 24px;
-    border: 2px solid blue;
-}
-
-/* Main Banner*/
-.banner{
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    background-color: lightgray;
-}
-.banner img{
-    margin: 32px 24px;
-    width: 60%;
-    
-}
-.banner-content{
+.name {
+    display: inline-flex;
     text-align: center;
     
 }
-.button{
+.name1 {
+    font-size: 32px;
+    text-emphasis: bold;
+}
+.name2 {
+    font-size: 32px;
+    color: dimgray
+}
+nav {
+    display: flex;
+}
+nav span {
+    text-align: right;
+    padding: 0 8px;
+    font-size: 18px
+}
+.nav {
+    text-align: right;
+    padding-right: 24px;
+    
+}
+
+/* Main Banner*/
+
+.banner1 {
+    display: flex;
+    background-color: lightgray;
+
+}
+.banner1 .img-side{
+    width: 60%;
+    text-align: left;
+    
+}
+.banner1 img {
+    width: 94%;
+    margin: 32px 24px;
+}
+.content-side{
+    width: auto;
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 40%;
+   
+}
+.banner1-content {
+    
+    text-align: left;
+    margin: auto 0;
+}
+.button {
     background-color: darkgray;
     color: white;
+    padding: 8px 30%;
 }
+.banner2 {
+    display:flex;
+   border: 3px solid red;
+    background-color: aliceblue;
+}
+.left-side {
+    width: 60%;
+    text-align: left;
+   
+}
+.left-side img {
+    width: 94%;
+    padding: 32px 24px;
+}
+.info-content {
+    padding: 0 24px 32px 24px;
+}
+.right-side {
+    width: 40%;
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+   
+    
+}
+.right-content {
+    margin: auto 0;
+    padding-bottom: 16px;
+    
+}
+.right-content h2{
+    padding: 8px 0;
+}
+.date {
+    display: flex;
+    text-align: left;
+    height: auto;
+    border: 1px solid lightgrey;
+    margin-bottom: 1px;
+}
+.date img {
+    width: 35%;
+    height: 35%;
+    padding:16px;
+    float: left;
+}
+
+.campus {
+    display:flex;
+    text-align: left;
+    height:auto;
+    border: 1px solid lightgrey;
+    margin-bottom: 1px;
+}
+.campus img {
+    float:left;
+    width: 35%;
+    height: 35%;
+    padding: 16px;
+    
+}
+.guest {
+    display: flex;
+    text-align: left;
+    height:auto;
+    background-color: lightgray;
+    border: 1px solid lightgrey;
+    margin-bottom: 1px;
+}
+.guest img {
+    width: 35%;
+    height: 35%;
+    padding: 16px;
+    float: left;
+}
+a{
+    text-decoration: none;
+    color: darkblue;
+}
+/*Learning content*/
+
+.learning{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    width: auto;
+   
+    padding: 32px 72px;
+}
+.title{
+   
+    padding-bottom: 16px;
+}
+.courses{
+    margin: 16px;
+    width: 30%;
+    height: 30%;
+    text-align: center;
+    border: 2px solid blue;
+}
+.courses img{
+    width: 100%;
+   
+    
+}
+.info-box{
+    padding:16px auto 24px 16px;
+    text-align: center;
+        
+}
+
+
+
+
+
