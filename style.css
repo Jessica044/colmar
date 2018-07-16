@@ -1,0 +1,79 @@
+body{
+    font-size:18px;
+    font-family: helvetica;
+    margin: 0.5em;
+    text-align: center;
+}
+
+.container{
+    width:auto;
+    margin:0;
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+}
+header{
+    height:64px;
+    width:100%;
+    border:2px solid black;
+}
+.logo img {
+    height: 32px;
+    padding-left: 24px;
+    padding-top: 8px;
+    margin-right: 16px;
+    align-items: center;
+ 
+}
+.name{
+    display:inline-flex;
+   text-align: center;
+    border:2px solid red;
+    
+           
+}
+.name1{
+    font-size:32px;
+    text-emphasis: bold;
+}
+.name2{
+    font-size:32px;
+    color:dimgray
+}
+
+nav{
+    display: flex;
+    
+}
+nav span{
+    text-align: right;
+    padding: 0 8px;
+    font-size: 18px
+   
+}
+.nav{
+    text-align: right;
+    padding-right: 24px;
+    border: 2px solid blue;
+}
+
+/* Main Banner*/
+.banner{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: lightgray;
+}
+.banner img{
+    margin: 32px 24px;
+    width: 60%;
+    
+}
+.banner-content{
+    text-align: center;
+    
+}
+.button{
+    background-color: darkgray;
+    color: white;
+}
