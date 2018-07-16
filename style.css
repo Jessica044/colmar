@@ -25,7 +25,7 @@ header {
 .name {
     display: inline-flex;
     text-align: center;
-    
+
 }
 .name1 {
     font-size: 32px;
@@ -46,7 +46,7 @@ nav span {
 .nav {
     text-align: right;
     padding-right: 24px;
-    
+
 }
 
 /* Main Banner*/
@@ -72,7 +72,7 @@ nav span {
     flex-wrap: wrap;
     align-items: center;
     width: 40%;
-   
+
 }
 .banner1-content {
     
@@ -86,13 +86,11 @@ nav span {
 }
 .banner2 {
     display:flex;
-   border: 3px solid red;
     background-color: aliceblue;
 }
 .left-side {
     width: 60%;
     text-align: left;
-   
 }
 .left-side img {
     width: 94%;
@@ -106,15 +104,12 @@ nav span {
     display:flex;
     flex-direction: column;
     flex-wrap: wrap;
-   
-    
 }
 .right-content {
     margin: auto 0;
     padding-bottom: 16px;
-    
 }
-.right-content h2{
+.right-content h3{
     padding: 8px 0;
 }
 .date {
@@ -130,7 +125,6 @@ nav span {
     padding:16px;
     float: left;
 }
-
 .campus {
     display:flex;
     text-align: left;
@@ -143,7 +137,7 @@ nav span {
     width: 35%;
     height: 35%;
     padding: 16px;
-    
+
 }
 .guest {
     display: flex;
@@ -163,41 +157,104 @@ a{
     text-decoration: none;
     color: darkblue;
 }
+
 /*Learning content*/
 
 .learning{
     display:flex;
     justify-content: center;
-    align-items: center;
-    align-content: flex-start;
     flex-wrap: wrap;
     width: auto;
-   
-    padding: 32px 72px;
+    background-color: lightgray;
+    padding: 32px 56px;
 }
 .title{
-   
-    padding-bottom: 16px;
+    background-color: lightgrey;
+    padding-top: 32px;
+    margin: 0;
 }
 .courses{
     margin: 16px;
     width: 30%;
-    height: 30%;
-    text-align: center;
-    border: 2px solid blue;
+    height: auto;
+    text-align: left;
+    background-color: white;
+   
 }
 .courses img{
     width: 100%;
-   
-    
 }
 .info-box{
-    padding:16px auto 24px 16px;
-    text-align: center;
-        
+    padding: 0px 16px 24px 16px;
+    width: auto;
 }
 
+/* thesis content */
 
+.thesis-box{
+    display:flex;
+    text-align: left;
+}
+.thesis-title{
+    padding: 32px 0;
+    margin: 0;
+}
+.video-side{
+    width: 60%;
+    text-align: left;
+}
+.video-side video{
+    width: 94%;
+    padding: 32px 24px;
+}
 
-
-
+.thesis-right{
+    width: 40%;
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-top: 24px;
+}
+.exhibit-info{
+    display: flex;
+    text-align: left;
+    height: auto;
+    border: 1px solid lightgrey;
+    margin-bottom: 1px;
+}
+.exhibit-info img{
+    width: auto;
+    height: 35%;
+    padding: 16px;
+    float: left;
+}
+.thesis-content{
+    margin: auto 0;
+    padding-bottom: 16px;
+}
+.now-then{
+     display: flex;
+    text-align: left;
+    height: auto;
+    border: 1px solid lightgrey;
+    margin-bottom: 1px;
+}
+.now-then img{
+     width: auto;
+    height: 35%;
+    padding: 16px;
+    float: left;
+}
+/*Footer*/
+footer{
+    width:100%;
+    height: 64px;
+    display: inline-flex;
+    justify-content: space-between;
+}
+.footer-info{
+    padding: 0 30px;
+}
+.footer-nav span{
+    padding: 16px;
+}
