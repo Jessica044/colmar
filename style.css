@@ -1,8 +1,7 @@
 body {
     font-size: 18px;
     font-family: helvetica;
-    margin: 0.5em;
-    text-align: center;
+    margin: 0;
 }
 .container {
     margin: 0;
@@ -13,28 +12,21 @@ body {
 header {
     height: 64px;
     width: 100%;
-    border: 2px solid black;
 }
 .logo img {
-    height: 32px;
     padding-left: 24px;
-    padding-top: 8px;
-    margin-right: 16px;
+    padding-top: 0;
+    padding-right: 5px;
     align-items: center;
 }
 .name {
+    height: 32px;
     display: inline-flex;
-    text-align: center;
-
+    font-size: 30px;
+    color: #605F5F;
+    margin: auto 0;
 }
-.name1 {
-    font-size: 32px;
-    text-emphasis: bold;
-}
-.name2 {
-    font-size: 32px;
-    color: dimgray
-}
+strong{ color:#2F2E3E;}
 nav {
     display: flex;
 }
@@ -48,7 +40,10 @@ nav span {
     padding-right: 24px;
 
 }
-
+.nav a{
+    display: inline-flex;
+   
+}
 /* Main Banner*/
 
 .banner1 {
@@ -59,35 +54,38 @@ nav span {
 .banner1 .img-side{
     width: 60%;
     text-align: left;
-    
+     padding: 32px 24px;
 }
 .banner1 img {
-    width: 94%;
-    margin: 32px 24px;
+    width: 100%;
+    height: 100%;
 }
 .content-side{
-    width: auto;
+    width: 40%;
     display:flex;
     flex-direction: column;
     flex-wrap: wrap;
-    align-items: center;
-    width: 40%;
-
+    margin: auto;
 }
 .banner1-content {
-    
     text-align: left;
-    margin: auto 0;
+    padding-right: 9%;
+    padding-bottom: 2%;
+   
 }
-.button {
-    background-color: darkgray;
+.banner1-content h1{
+   
+}
+button {
+    background-color: #4F4E4E;
     color: white;
-    padding: 8px 30%;
+    padding: 8px ;
+    width:100%;
+    text-align: center;
 }
 .banner2 {
     display:flex;
-    background-color: aliceblue;
-}
+   }
 .left-side {
     width: 60%;
     text-align: left;
@@ -97,7 +95,7 @@ nav span {
     padding: 32px 24px;
 }
 .info-content {
-    padding: 0 24px 32px 24px;
+    padding:  0 24px 32px 24px;
 }
 .right-side {
     width: 40%;
@@ -106,38 +104,25 @@ nav span {
     flex-wrap: wrap;
 }
 .right-content {
+    width: 40%;
     margin: auto 0;
     padding-bottom: 16px;
 }
 .right-content h3{
     padding: 8px 0;
 }
-.date {
+.box {
     display: flex;
     text-align: left;
     height: auto;
     border: 1px solid lightgrey;
     margin-bottom: 1px;
 }
-.date img {
+.box img {
     width: 35%;
     height: 35%;
     padding:16px;
     float: left;
-}
-.campus {
-    display:flex;
-    text-align: left;
-    height:auto;
-    border: 1px solid lightgrey;
-    margin-bottom: 1px;
-}
-.campus img {
-    float:left;
-    width: 35%;
-    height: 35%;
-    padding: 16px;
-
 }
 .guest {
     display: flex;
@@ -172,6 +157,7 @@ a{
     background-color: lightgrey;
     padding-top: 32px;
     margin: 0;
+    text-align: center;
 }
 .courses{
     margin: 16px;
@@ -198,6 +184,7 @@ a{
 .thesis-title{
     padding: 32px 0;
     margin: 0;
+    text-align: center;
 }
 .video-side{
     width: 60%;
@@ -207,7 +194,6 @@ a{
     width: 94%;
     padding: 32px 24px;
 }
-
 .thesis-right{
     width: 40%;
     display:flex;
@@ -219,7 +205,7 @@ a{
     display: flex;
     text-align: left;
     height: auto;
-    border: 1px solid lightgrey;
+    background-color: lightgray;
     margin-bottom: 1px;
 }
 .fisma img{
@@ -236,25 +222,125 @@ a{
      display: flex;
     text-align: left;
     height: auto;
-    border: 1px solid lightgrey;
     margin-bottom: 1px;
 }
 .now-then img{
-     width: auto;
+    width: auto;
     height: 35%;
     padding: 16px;
     float: left;
 }
+
 /*Footer*/
+
 footer{
     width:100%;
     height: 64px;
     display: inline-flex;
     justify-content: space-between;
+    align-items: center;
 }
 .footer-info{
-    padding: 0 30px;
+    padding: 16px 24px;
 }
+
 .footer-nav span{
-    padding: 16px;
+    font-size: .75em;
+    padding: 8px;
+}
+
+/* Mobile */
+@media only screen and (min-width:480px){
+    .nav a{ display:none}
+}
+@media only screen and (max-width:470px) {
+    
+    .name1 {display:none}
+    .nav span {display:none}
+    .nav a {  }
+    nav img{ height:auto; width:auto;}
+    /*banner1*/
+    .banner1{
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+    width: auto;
+    height:auto;}
+    .banner1 .img-side{
+        width: auto;
+        padding: 0;
+    }
+    .banner1 img{
+        width: 100%;
+        padding:0;
+        margin:0;  }
+    .content-side{ width:auto; 
+        padding: 0 16px;
+        }
+    .banner1-content{
+        width:auto;
+        height:auto;
+        padding: 0 0 34px 0;
+    }
+    .button{padding: 8px auto;}
+    /*banner2*/
+    .banner2 {
+        display:flex; 
+        flex-direction: column;}
+    .banner2 .left-side{display:none;}
+    .right-side{ width:auto;}
+    .right-side img{ 
+        width:auto;
+        padding: 16px;}
+    .right-content{
+        width: auto;
+        padding:0 16px;
+        }
+    .box{display:flex;
+        flex-direction: column;
+        width: 100%;
+        padding-bottom: 64px;}
+    .guest{
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        padding-bottom: 32px;}
+    /*learning section*/
+    .title{
+        text-align: center;
+        background-color:white;
+        padding-top:32px;
+        padding-bottom: 8px;}
+    .learning{
+        background-color: white;
+        flex-direction: column;
+        padding: 0 16px 24px 16px; 
+        }
+    .courses{ 
+        background-color: lightgray;
+        width:auto; 
+        margin: 8px 0;
+       }
+    .courses h3{ padding-left:16px;}
+    .courses img{display:none;}
+    .info-box{ padding:0;}
+    .info-box p {display:none;}
+     /*Thesis section*/
+    .thesis-title{ 
+        padding-bottom: 16px;
+        text-align: center;}
+    .thesis-right{display:none;}
+    .info-content{ display: none;}
+    .video-side{ 
+        width: auto; 
+        padding: 0;
+        text-align: center;
+        margin :0;}
+    .video-side video{ 
+        width:100%;
+        padding: 0;
+        margin-bottom: 24px;}
+    .footer-info{ font-size: 0.6em;}
+    .footer-nav{display:none;}
 }
